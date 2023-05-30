@@ -1,0 +1,53 @@
+*{
+	margin: 15px;
+	padding: 0;
+	box-sizing: border-box;
+}
+.encabezado{
+	width: 940px;
+	background: #1674AC;
+	text-align: center;
+	font-family: castellar;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 5px;
+	opacity: 0.8;
+}
+
+.formulario{
+	width: 940px;
+	background: #1674AC;
+	margin:auto;
+	text-align: center;
+	padding: 50px;
+	border-radius: 5px;
+}
+
+.formu{
+	width: 100%;
+	padding: 20px;
+	margin: 10px;
+	text-align: center;
+	border: 1px solid #1f53c5;
+	border-radius: 10px;
+	opacity: 0.6;
+	box-shadow:0px 3px 8px greenyellow;
+}
+
+.boton{
+	width: 20%;
+	margin: 30px;
+	padding: 10px;
+	font-family:calibri;
+	font-weight: bolder;
+	background: greenyellow;
+	border-radius: 6px;
+	box-shadow:0px 3px 8px greenyellow	 ;
+}
+
+.pie{
+	width: 940px;
+	text-align: center;
+	display: inline;
+	color: white;
+}

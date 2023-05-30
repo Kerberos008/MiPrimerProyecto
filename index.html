@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html style="background-image: url(https://media.giphy.com/media/aRZ4vTsHnyW6A/giphy.gif)">
+<head>
+	<header>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encriptador</title>
+	<link rel="stylesheet" href="estilo.css">
+	
+	<h1 class="encabezado">ENCRIPTA Y DESENCRIPTA TU TEXTO</h1>
+	</header>
+</head>
+
+<body>
+
+<section class="formulario">
+
+<input class="formu" type="text" id="nomest" placeholder="Ingrese texto (Sin mayusculas ni acentos)">
+<input class="formu" type="text" id="resultado" placeholder="Respuesta">
+
+<button class="boton" type="button" onclick="encriptar()">Encriptar</button>
+<button class="boton" type="button" onclick="desencriptar()">Desencriptar</button>
+
+<button class="boton" type="button" onclick="copy()">Copiar texto</button>
+
+
+
+</section>
+
+
+<script>
+	//var button = document.querySelector("button")
+	var input = document.querySelector("input");
+
+
+	function encriptar(){ 
+	var cadena=input.value
+	var cadena2=cadena.replace("e","enter").replace("i","imes").replace("a","ai").replace("o","ober").replace("u","ufat");
+	
+	//console.log(cadena2)
+	document.getElementById('resultado').value= cadena2;//lo imprimer en el input resultado
+	input.value="";
+	}
+
+	function desencriptar(){ //Aqui se ingresa el texto copiado (encriptado)
+	
+	var cadena=input.value
+	var	cadena2=cadena.replace("enter","e").replace("imes","i").replace("ai","a").replace("ober","o").replace("ufat","u")
+	//console.log(cadena3)
+	document.getElementById('resultado').value= cadena2;//lo imprime en el input resultado
+	input.value="";
+	}
+
+	function copy() {
+	var copyText = document.getElementById("resultado");
+	copyText.select();
+	document.execCommand("copy");
+	}
+	
+</script>
+	<footer class="pie">
+	    <p>Creado por: Luis Daniel Ocampo Coronado</p>
+	    <p>Para Alura challenge</p>
+	</footer>
+
+</body>
+</html>
+
+
